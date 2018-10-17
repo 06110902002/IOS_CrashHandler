@@ -14,6 +14,7 @@
 		824C6FC52176D4250035EC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824C6FC32176D4250035EC6A /* LaunchScreen.storyboard */; };
 		824C6FC82176D4250035EC6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C6FC72176D4250035EC6A /* main.m */; };
 		824C6FD22176D4250035EC6A /* CrashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C6FD12176D4250035EC6A /* CrashDemoTests.m */; };
+		824C6FE5217712BF0035EC6A /* HandlerCrashMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C6FE4217712BF0035EC6A /* HandlerCrashMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		824C6FCD2176D4250035EC6A /* CrashDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		824C6FD12176D4250035EC6A /* CrashDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDemoTests.m; sourceTree = "<group>"; };
 		824C6FD32176D4250035EC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824C6FE3217712BF0035EC6A /* HandlerCrashMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandlerCrashMgr.h; sourceTree = "<group>"; };
+		824C6FE4217712BF0035EC6A /* HandlerCrashMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandlerCrashMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		824C6FB72176D4230035EC6A /* CrashDemo */ = {
 			isa = PBXGroup;
 			children = (
+				824C6FE2217712800035EC6A /* crash */,
 				824C6FB82176D4230035EC6A /* AppDelegate.h */,
 				824C6FB92176D4230035EC6A /* AppDelegate.m */,
 				824C6FBB2176D4230035EC6A /* ViewController.h */,
@@ -101,6 +105,15 @@
 				824C6FD32176D4250035EC6A /* Info.plist */,
 			);
 			path = CrashDemoTests;
+			sourceTree = "<group>";
+		};
+		824C6FE2217712800035EC6A /* crash */ = {
+			isa = PBXGroup;
+			children = (
+				824C6FE3217712BF0035EC6A /* HandlerCrashMgr.h */,
+				824C6FE4217712BF0035EC6A /* HandlerCrashMgr.m */,
+			);
+			path = crash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824C6FBD2176D4230035EC6A /* ViewController.m in Sources */,
+				824C6FE5217712BF0035EC6A /* HandlerCrashMgr.m in Sources */,
 				824C6FC82176D4250035EC6A /* main.m in Sources */,
 				824C6FBA2176D4230035EC6A /* AppDelegate.m in Sources */,
 			);
@@ -362,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39ZDP7H4DZ;
 				INFOPLIST_FILE = CrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39ZDP7H4DZ;
 				INFOPLIST_FILE = CrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

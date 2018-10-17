@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+    button.backgroundColor = [UIColor grayColor];
+    [button setTitle:@"TEST" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+}
+
+-(void) onClick:(UIButton*) button{
+    
+    NSArray* arr =  [NSArray arrayWithObjects:@"hello",@"小妹妹",@"fuck you",@"baby", nil];
+    NSLog(@"27-------------:%@",[arr objectAtIndex:10]);
 }
 
 
